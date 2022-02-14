@@ -22,30 +22,40 @@
     var CONFIG = {"hostname":"gitee.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="回家">
-<meta property="og:type" content="website">
-<meta property="og:title" content="回家">
-<meta property="og:url" content="https://gitee.com/wszdc/index.html">
+  <meta name="description" content="Python+selenium实现医院自动挂号有些医院某些专家大牛的号总是“一号难求”，基本是放票秒空，针对这种情况，掌握一定技术的小伙伴可以使用自动化手法进行挂号 首先声明该脚本仅仅用于娱乐和相关技术学习，不用于商业用途 所用到的技术：  python 3.7 selenium库 xpath  抢号之前首先需要登录 准备好登录用的身份信息和网页的url，这里由于网页的登录有验证码，选择自动开启浏">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python+selenium实现医院自动挂号">
+<meta property="og:url" content="https://gitee.com/wszdc/2022/02/14/Python+selenium%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8C%BB%E9%99%A2%E6%8C%82%E5%8F%B7/index.html">
 <meta property="og:site_name" content="回家">
-<meta property="og:description" content="回家">
+<meta property="og:description" content="Python+selenium实现医院自动挂号有些医院某些专家大牛的号总是“一号难求”，基本是放票秒空，针对这种情况，掌握一定技术的小伙伴可以使用自动化手法进行挂号 首先声明该脚本仅仅用于娱乐和相关技术学习，不用于商业用途 所用到的技术：  python 3.7 selenium库 xpath  抢号之前首先需要登录 准备好登录用的身份信息和网页的url，这里由于网页的登录有验证码，选择自动开启浏">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/02/14/F1S3bgDxNHlC76X.png">
+<meta property="og:image" content="https://s2.loli.net/2022/02/14/Cj3NRf1nBUObcMh.png">
+<meta property="og:image" content="https://s2.loli.net/2022/02/14/kR872d3btpywfeu.png">
+<meta property="og:image" content="https://s2.loli.net/2022/02/14/AxqVgrCJG6WvfhU.png">
+<meta property="og:image" content="https://s2.loli.net/2022/02/14/qx8Vjny6EvpmS9a.png">
+<meta property="og:image" content="https://s2.loli.net/2022/02/14/MdoUQpwsN1tKgLX.png">
+<meta property="og:image" content="https://s2.loli.net/2022/02/14/6hZNeRoBsFWILlf.png">
+<meta property="article:published_time" content="2022-02-14T14:49:00.000Z">
+<meta property="article:modified_time" content="2022-02-14T14:49:33.703Z">
 <meta property="article:author" content="whznpu">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/02/14/F1S3bgDxNHlC76X.png">
 
-<link rel="canonical" href="https://gitee.com/wszdc/">
+<link rel="canonical" href="https://gitee.com/wszdc/2022/02/14/Python+selenium%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8C%BB%E9%99%A2%E6%8C%82%E5%8F%B7/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>回家</title>
+  <title>Python+selenium实现医院自动挂号 | 回家</title>
   
 
 
@@ -163,9 +173,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -181,10 +192,9 @@
       <meta itemprop="name" content="回家">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/02/14/Python+selenium%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8C%BB%E9%99%A2%E6%8C%82%E5%8F%B7/" class="post-title-link" itemprop="url">Python+selenium实现医院自动挂号</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Python+selenium实现医院自动挂号
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -208,7 +218,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Python-selenium实现医院自动挂号"><a href="#Python-selenium实现医院自动挂号" class="headerlink" title="Python+selenium实现医院自动挂号"></a>Python+selenium实现医院自动挂号</h1><p>有些医院某些专家大牛的号总是“一号难求”，基本是放票秒空，针对这种情况，掌握一定技术的小伙伴可以使用自动化手法进行挂号</p>
+        <h1 id="Python-selenium实现医院自动挂号"><a href="#Python-selenium实现医院自动挂号" class="headerlink" title="Python+selenium实现医院自动挂号"></a>Python+selenium实现医院自动挂号</h1><p>有些医院某些专家大牛的号总是“一号难求”，基本是放票秒空，针对这种情况，掌握一定技术的小伙伴可以使用自动化手法进行挂号</p>
 <p><strong>首先声明该脚本仅仅用于娱乐和相关技术学习，不用于商业用途</strong></p>
 <p>所用到的技术：</p>
 <ul>
@@ -256,158 +266,30 @@
 <p>运行结果</p>
 <p><img src="https://s2.loli.net/2022/02/14/6hZNeRoBsFWILlf.png" alt="image-20220214205614828"></p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://gitee.com/wszdc/2022/01/17/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whznpu">
-      <meta itemprop="description" content="回家">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="回家">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/01/17/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" class="post-title-link" itemprop="url">第一篇文章</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-01-17 21:09:58 / 修改时间：22:25:41" itemprop="dateCreated datePublished" datetime="2022-01-17T21:09:58+08:00">2022-01-17</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><img src="https://s2.loli.net/2022/01/17/stFUNRpjXxrMYAG.png" alt="QQ截图20220117220921"></p>
-<h1 id="沁园春-雪"><a href="#沁园春-雪" class="headerlink" title="沁园春 雪"></a>沁园春 雪</h1><p>北国风光，千里冰封，万里雪飘。</p>
-<p>望长城内外，惟余莽莽；大河上下，顿失滔滔。</p>
-<p>山舞银蛇，原驰蜡象，欲与天公试比高。</p>
-<p>须晴日，看红装素裹，分外妖娆。</p>
-<p>江山如此多娇，引无数英雄竞折腰。</p>
-<p>惜秦皇汉武，略输文采；唐宗宋祖，稍逊风骚。</p>
-<p align="right">毛泽东 1936年2月</p>
+        
 
 
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/01/17/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" rel="prev" title="第一篇文章">
+      <i class="fa fa-chevron-left"></i> 第一篇文章
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://gitee.com/wszdc/2022/01/12/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whznpu">
-      <meta itemprop="description" content="回家">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="回家">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/01/12/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-01-12 22:03:04" itemprop="dateCreated datePublished" datetime="2022-01-12T22:03:04+08:00">2022-01-12</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -460,6 +342,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python-selenium%E5%AE%9E%E7%8E%B0%E5%8C%BB%E9%99%A2%E8%87%AA%E5%8A%A8%E6%8C%82%E5%8F%B7"><span class="nav-number">1.</span> <span class="nav-text">Python+selenium实现医院自动挂号</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
